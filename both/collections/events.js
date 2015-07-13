@@ -1,5 +1,24 @@
 Events = new Mongo.Collection('events');
-
+//Events.initEasySearch('location', {
+//    'limit' : 20,
+//    'use' : 'mongo-db'
+//});
+// On Client and Server
+var resultsLimit = 20;
+EasySearch.createSearchIndex('events', {
+    'field' : ['location', 'name', 'category.name'],
+    'collection' : Events,
+    'limit' : 20,
+    'use' : 'mongo-db',
+    'query' : function (searchString, opts) {
+        // Default query that is used for searching
+        var query = EasySearch.getSearcher(this.use).defaultQuery(this, searchString);
+    console.log('searchString: ' + searchString);
+        //query.$and = {$gte:moment().startOf('day').toDate()};
+        console.log(query);
+        return query;
+    }
+});
 Events.before.insert(function(userId, doc) {
     doc.dateCreated = new Date();
     if (userId) { //checks if request comes from frontend

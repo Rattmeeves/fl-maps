@@ -1,5 +1,26 @@
 <template name="calendar">
     <div class="template-calendar container">
+        {{> esInput id="searchUpcomingEvents" index="events" placeholder="Search..." }}
+
+        {{#ifEsInputIsEmpty index="events"}}
+            <div>Search for players</div>
+        {{/ifEsInputIsEmpty}}
+
+        {{#ifEsHasNoResults index="events"}}
+            <div class="no-results">No results found!</div>
+        {{/ifEsHasNoResults}}
+
+        {{#ifEsIsSearching index="events"}}
+            <div>Loading...</div>
+        {{else}}
+            <ul class="collapsible popout">
+                {{#esEach index="events"}}
+                    {{> calendarEvent}}
+                {{/esEach}}
+            </ul>
+
+            {{> esLoadMoreButton index="events"}}
+        {{/ifEsIsSearching}}
 
         <h2>Upcoming events</h2>
 
