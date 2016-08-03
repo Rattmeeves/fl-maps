@@ -58,3 +58,5 @@ spacebars
 check
 standard-minifier-js
 seba:minifiers-autoprefixer
+modules
+ecmascript
