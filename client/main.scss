@@ -1,0 +1,22 @@
+// Standard SCSS files.
+@import "imports/ui/stylesheets/materialize/materialize.scss";
+@import "imports/ui/stylesheets/eventForm/slidepanel.scss";
+@import "imports/ui/stylesheets/eventForm/typeahead.scss";
+@import "imports/ui/stylesheets/materialize/materialize.scss";
+@import "imports/ui/stylesheets/logo.scss";
+
+// CSS files.
+@import "imports/ui/stylesheets/style";
+@import "imports/ui/stylesheets/social_buttons";
+@import "imports/ui/stylesheets/calendar/calendar";
+@import "imports/ui/stylesheets/eventPage/eventPage";
+@import "imports/ui/stylesheets/map/leaflet.fullscreen";
+@import "imports/ui/stylesheets/map/map";
+
+@media #{$small-and-down} {
+  #congratsModal {
+    width: 100%;
+    top: 0 !important;
+    max-height: 100%;
+  }
+}
