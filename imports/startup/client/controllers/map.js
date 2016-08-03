@@ -1,3 +1,5 @@
+import { Events } from '/imports/api/events/events';
+
 MapController = AppController.extend({
     waitOn: function() {
         return this.subscribe('events') && this.subscribe('categories');

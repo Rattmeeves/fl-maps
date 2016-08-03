@@ -1,3 +1,5 @@
+import { Events } from '/imports/api/events/events';
+
 // Bandaid for AutoForm not removing array elements, GitBug @ https://goo.gl/SBijNR
 Template.afArrayField_sociallinks.events({
     'click .autoform-remove-item': function (e) {

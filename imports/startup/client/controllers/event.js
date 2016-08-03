@@ -1,3 +1,5 @@
+import { Events } from '/imports/api/events/events';
+
 EventController = AppController.extend({
   action: function () {
     // set the reactive state variable "postId" with a value

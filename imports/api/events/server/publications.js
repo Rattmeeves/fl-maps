@@ -1,3 +1,6 @@
+import { Events } from '../events';
+import { Categories } from '../../categories/categories';
+
 Meteor.publishComposite("events", function() {
     return {
         find: function() {

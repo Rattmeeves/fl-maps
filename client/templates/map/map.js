@@ -1,3 +1,6 @@
+import { Categories } from '/imports/api/categories/categories';
+import { Events } from '/imports/api/events/events';
+
 var map, markers = {};
 var viewLayers = {};    //stores prune cluster instances for each event category
 

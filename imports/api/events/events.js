@@ -1,4 +1,4 @@
-Events = new Mongo.Collection('events');
+const Events = new Mongo.Collection('events');
 
 Events.before.insert(function(userId, doc) {
     doc.dateCreated = new Date();
@@ -227,3 +227,5 @@ function getTimesArr() {
     }
     return timeArr
 }
+
+export { Events };

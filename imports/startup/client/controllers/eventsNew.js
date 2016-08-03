@@ -1,3 +1,5 @@
+import { Categories } from '/imports/api/categories/categories';
+
 EventsNewController = AppController.extend({
     waitOn: function() {
         return this.subscribe('categories');

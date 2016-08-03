@@ -1,3 +1,5 @@
+import { Categories } from '/imports/api/categories/categories';
+
 Meteor.startup(function () {
     if (Categories.find({}).count() === 0) {
         Categories.insert({"name": "Pillow Fight 4Connection", "color": '#d50000'});

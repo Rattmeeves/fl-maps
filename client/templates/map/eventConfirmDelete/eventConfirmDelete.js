@@ -1,3 +1,5 @@
+import { Events } from '/imports/api/events/events';
+
 Template.eventConfirmDelete.events({
     'click .yes-btn': function() {
         var selectedEventId = Session.get('selected');

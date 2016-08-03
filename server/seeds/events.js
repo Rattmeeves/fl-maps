@@ -1,3 +1,6 @@
+import { Categories } from '/imports/api/categories/categories';
+import { Events } from '/imports/api/events/events';
+
 var inDevelopment = function () {
     return process.env.NODE_ENV === "development";
 };
