@@ -1,3 +1,5 @@
+import './socialCard.html';
+
 Session.setDefault('editMode',false);
 Template.socialCard.events({
     'click .edit-btn': function toggleEditMode(e) {

@@ -1,3 +1,5 @@
+import './eventPopup.html';
+
 Template.eventPopup.onCreated=function() {
     //Open share modal
     $('.promo-btn','#eventPopup').click(function(){

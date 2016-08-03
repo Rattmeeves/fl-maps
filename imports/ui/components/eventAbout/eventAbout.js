@@ -1,5 +1,13 @@
 import { Events } from '/imports/api/events/events';
 
+import './cards/contactCard.js';
+import './cards/infoCard.js';
+import './cards/locationCard.js';
+import './cards/socialCard.js';
+import './afArrayField_sociallinks.html';
+
+import './eventAbout.html';
+
 // Bandaid for AutoForm not removing array elements, GitBug @ https://goo.gl/SBijNR
 Template.afArrayField_sociallinks.events({
     'click .autoform-remove-item': function (e) {

@@ -1,3 +1,5 @@
+import './eventsForm.html';
+
 AutoForm.hooks({
     'events-form': {
         onSuccess: function (operation, result, template) {

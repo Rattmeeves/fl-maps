@@ -1,5 +1,7 @@
 import { Events } from '/imports/api/events/events';
 
+import './congratsModal.html';
+
 Template.congratsModal.helpers({
 	selectedEvent: function() {
         var eventId = Session.get('selected');

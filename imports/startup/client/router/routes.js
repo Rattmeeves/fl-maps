@@ -1,3 +1,8 @@
+import '/imports/ui/pages/calendar/calendar.js';
+import '/imports/ui/pages/event/event.js';
+import '/imports/ui/pages/home/home.js';
+import '/imports/ui/pages/map/map.js';
+
 Router.route('/', {
   name: 'home'
 });

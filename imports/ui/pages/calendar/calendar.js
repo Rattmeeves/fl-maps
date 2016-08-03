@@ -1,3 +1,7 @@
+import '/imports/ui/components/calendarEvent/calendarEvent.js';
+
+import './calendar.html';
+
 Template.calendar.helpers({
     notEmpty: function(data) {
         return data && data.count() != 0;
