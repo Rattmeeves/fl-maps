@@ -228,4 +228,16 @@ function getTimesArr() {
     return timeArr
 }
 
+Events.allow({
+  'insert': function(userId, doc) {
+    return userId;
+  },
+  'update': function(userId, doc, fields, modifier) {
+    return userId;
+  },
+  'remove': function(userId, doc) {
+    return userId;
+  }
+});
+
 export { Events };
