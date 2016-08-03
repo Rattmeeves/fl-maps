@@ -1,3 +1,8 @@
+import './leftLinks.js';
+import './rightLinks.js';
+
+import './_header.html';
+
 Template._header.rendered = function() {
   Meteor.setTimeout(function() {
     this.$('.dropdown-button').dropdown({

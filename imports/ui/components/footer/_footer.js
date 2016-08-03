@@ -1,3 +1,5 @@
+import './_footer.html';
+
 Template._footer.rendered=function() {
 
     /** INIT SOCIAL SHARING BUTTONS */

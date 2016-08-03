@@ -1,3 +1,5 @@
+import './leftLinks.html';
+
 Template.leftLinks.helpers({
     joinTeamClass: function() {
         return this.sidenav?'':'hide-on-med-and-down';
