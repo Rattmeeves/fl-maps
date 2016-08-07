@@ -8,3 +8,6 @@ import './accounts.js';
 // as an API to the client.
 import './register-api.js';
 
+import './email-config.js';
+
+import './templates/templates.js';
