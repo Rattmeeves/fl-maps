@@ -1,9 +1,3 @@
-import '/imports/ui/components/eventAbout/eventAbout.js';
-import '/imports/ui/components/eventComments/eventComments.js';
-import '/imports/ui/components/eventPhotos/eventPhotos.js';
-import '/imports/ui/components/eventVideos/eventVideos.js';
-import '/imports/ui/components/eventShowMoreButton/showMoreButton.js';
-
 import './event.html';
 
 Template.event.helpers({

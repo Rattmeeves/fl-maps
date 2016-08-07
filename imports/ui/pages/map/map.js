@@ -1,10 +1,6 @@
 import { Categories } from '/imports/api/categories/categories';
 import { Events } from '/imports/api/events/events';
 
-import '/imports/ui/components/popup/eventPopup.js';
-import '/imports/ui/components/eventConfirmDelete/eventConfirmDelete.js';
-import '/imports/ui/components/congratsModal/congratsModal.js';
-
 import './map.html';
 
 var map, markers = {};

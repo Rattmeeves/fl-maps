@@ -1,6 +1,3 @@
-import '/imports/ui/components/header/_header.js';
-import '/imports/ui/components/footer/_footer.js';
-
 import './appLayout.html';
 
 Meteor.startup(function() {

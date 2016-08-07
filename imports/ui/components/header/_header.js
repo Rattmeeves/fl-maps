@@ -1,6 +1,3 @@
-import './leftLinks.js';
-import './rightLinks.js';
-
 import './_header.html';
 
 Template._header.rendered = function() {
